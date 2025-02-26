@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.footer {
+  @apply px-8 py-11 container mx-auto lg:px-28;
+}
+.footer__container {
+  @apply bg-lightGreen px-8 py-12 lg:px-16 lg:py-20 flex flex-wrap gap-8 lg:gap-0 justify-between rounded-2xl;
+}
+.footer__copyright {
+  @apply text-center text-sm text-lightGray mt-12;
+}
+.footer__info {
+  @apply w-full lg:w-[36%];
+}
+.footer__logo {
+  @apply mb-6;
+}
+.footer__address {
+  @apply text-sm leading-[20px] text-lightGray mb-6;
+}
+.footer__social {
+  @apply flex gap-2;
+}
+.footer__social-item {
+  @apply p-2 bg-white border border-gray-200 rounded-full transition duration-500 hover:bg-primary hover:cursor-pointer hover:-translate-y-1;
+}
+.footer__social-icon {
+  @apply group-hover:brightness-0 group-hover:invert;
+}
+.footer__links {
+  @apply w-full lg:w-[14%];
+}
+.footer__links-title {
+  @apply text-lg font-medium text-drakGray mb-4;
+}
+.footer__links-list {
+  @apply text-sm text-lightGray space-y-4;
+}
+.footer__newsletter {
+  @apply w-full lg:w-[26%];
+}
+.footer__newsletter-title {
+  @apply text-lg font-medium text-drakGray mb-4;
+}
+.footer__newsletter-description {
+  @apply text-sm text-lightGray;
+}
+.footer__newsletter-form {
+  @apply flex;
+}
+.footer__newsletter-input {
+  @apply w-full border border-gray-300 focus:outline-none focus:border-primary rounded-l-lg px-4 py-2 mt-4;
+}
+.footer__newsletter-button {
+  @apply text-sm text-white bg-primary rounded-r-md px-4 py-2 mt-4 hover:bg-secondary transition duration-500;
+}
+.footer__newsletter-contact {
+  @apply flex items-center gap-2 mt-4 text-sm text-lightGray;
+}

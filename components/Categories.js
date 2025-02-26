@@ -30,7 +30,8 @@ export default function Categories() {
           {categoriesData.map((item, index) => (
             <SwiperSlide
               key={index}
-              className={`${`bg-[${item.bgColor}]`} relative px-4 py-8 text-center rounded-lg hover:cursor-pointer group`}
+              className="relative px-4 py-8 text-center rounded-lg hover:cursor-pointer group"
+              style={{ backgroundColor: item.bgColor }}
             >
               <div className="absolute inset-0 opacity-0 group-hover:opacity-[7%] transition-opacity duration-300 bg-[url('/images/header-bg.png')] bg-cover bg-center rounded-lg"></div>
               <div className="relative z-10">
