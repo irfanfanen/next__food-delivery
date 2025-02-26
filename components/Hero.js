@@ -19,10 +19,10 @@ export default function Hero() {
             lot of the food that we buy.
           </p>
           <div className="flex space-x-4">
-            <button className="bg-primary text-sm font-medium text-white px-4.5 py-2.5 rounded-3xl">
-              Daftar Sekarang
+            <button className="bg-primary text-sm font-medium text-white px-4.5 py-2.5 rounded-3xl shadow-xl hover:bg-secondary transition duration-500">
+              Register Now
             </button>
-            <button className="text-primary text-sm font-medium border border-primary px-4.5 py-2.5 rounded-3xl hover:text-white hover:bg-primary duration-500">
+            <button className="text-lightGray text-sm font-medium border border-gray-200 px-4.5 py-2.5 rounded-3xl hover:text-primary hover:border-primary duration-500">
               About Us
             </button>
           </div>

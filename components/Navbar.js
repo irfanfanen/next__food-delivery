@@ -60,12 +60,12 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <div className="flex space-x-6">
-          <button className="hidden xl:block text-sm font-medium text-drakGray hover:text-primary">
-            Masuk
+        <div className="flex space-x-2.5">
+          <button className="hidden xl:block text-sm font-medium text-lightGray px-4.5 py-2.5 rounded-full border border-gray-200 hover:text-primary hover:border-primary transition duration-500">
+            Sign In
           </button>
-          <button className="bg-primary text-sm font-medium text-white px-4.5 py-2.5 rounded-3xl">
-            Daftar Sekarang
+          <button className="bg-primary text-sm font-medium text-white px-4.5 py-2.5 rounded-3xl transition duration-500 hover:bg-secondary">
+            Register Now
           </button>
         </div>
       </div>

@@ -87,6 +87,12 @@ export const categoriesData = [
     description: "11 Items",
     bgColor: "#F3F7D9",
   },
+  {
+    icon: assets.cupcake_icon,
+    name: "Cupcake",
+    description: "22 Items",
+    bgColor: "#F0FEEB",
+  },
 ];
 
 export const productsData = [
