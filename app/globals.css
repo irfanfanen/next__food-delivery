@@ -2,11 +2,179 @@
 @tailwind components;
 @tailwind utilities;
 
+/* GLOBAL */
+.btn {
+  @apply px-4.5 py-2.5 text-sm font-medium rounded-3xl transition duration-500;
+}
+.btn__icon {
+  @apply flex items-center gap-2;
+}
+.btn__icon--item {
+  @apply w-5;
+}
+.btn--primary {
+  @apply text-white bg-primary hover:bg-secondary;
+}
+.btn--secondary {
+  @apply text-lightGray border border-gray-200 hover:border-primary hover:text-primary;
+}
+
+.responsive--hidden-sm {
+  @apply hidden sm:block;
+}
+.responsive--hidden-md {
+  @apply hidden md:block;
+}
+.responsive--hidden-lg {
+  @apply hidden lg:block;
+}
+
+.responsive--show-sm {
+  @apply block sm:hidden;
+}
+.responsive--show-md {
+  @apply block md:hidden;
+}
+.responsive--show-lg {
+  @apply block lg:hidden;
+}
+
+/* NAVBAR */
+.nav {
+  @apply px-6 lg:px-28 py-6 container mx-auto flex justify-between items-center;
+}
+.nav__logo {
+  @apply w-[150px];
+}
+.nav__list {
+  @apply flex space-x-8;
+}
+.nav__link {
+  @apply relative text-sm font-medium text-lightGray hover:text-primary transition duration-500;
+}
+.nav__link--active {
+  @apply text-primary font-semibold;
+}
+.nav__badge {
+  @apply absolute -top-4.5 -right-4 px-[9px] py-[3px] rounded-full text-[8px] leading-[14px] font-bold;
+}
+.nav__badge--danger {
+  @apply bg-red-500 text-white;
+}
+.nav__actions {
+  @apply flex space-x-2.5;
+}
+
+/* HERO */
+.hero {
+  @apply px-6 py-11 md:py-0 container mx-auto lg:px-28;
+}
+.hero__container {
+  @apply flex flex-col lg:flex-row items-center gap-8;
+}
+.hero__content {
+  @apply w-full lg:w-1/2 space-y-8;
+}
+.hero__title {
+  @apply text-[48px] md:text-[64px] leading-[64px] text-primary font-medium;
+}
+.hero__description {
+  @apply text-lg leading-[29px] text-lightGray;
+}
+.hero__actions {
+  @apply flex space-x-2.5;
+}
+.hero__image {
+  @apply w-full lg:w-1/2 justify-center;
+}
+
+/* HEADER */
+.header {
+  @apply relative;
+}
+.header__background {
+  @apply absolute inset-0 bg-cover bg-center bg-no-repeat h-screen bg-[url('/images/header-bg.png')] opacity-[2%];
+}
+.header__content {
+  @apply relative;
+}
+
+/* CATEGORIES */
+.categories {
+  @apply px-6 py-11 container mx-auto lg:px-28;
+}
+.categories__title {
+  @apply text-2xl xl:text-4xl font-medium text-drakGray;
+}
+.categories__title--primary {
+  @apply text-primary;
+}
+.categories__list {
+  @apply mt-8;
+}
+.categories__item {
+  @apply relative px-4 py-8 text-center rounded-lg hover:cursor-pointer;
+}
+.categories__overlay {
+  @apply absolute inset-0 opacity-0 group-hover:opacity-[7%] transition-opacity duration-300 bg-[url('/images/header-bg.png')] bg-cover bg-center rounded-lg;
+}
+.categories__content {
+  @apply relative z-10;
+}
+.categories__icon {
+  @apply mb-6 mx-auto;
+}
+.categories__name {
+  @apply mb-1 text-base font-medium text-drakGray;
+}
+.categories__description {
+  @apply text-sm text-drakGray;
+}
+.categories__actions {
+  @apply mt-8 hidden md:flex justify-end gap-4;
+}
+
+/* PRODUCTS  */
+.products {
+  @apply px-6 py-11 container mx-auto lg:px-28;
+}
+.products__title {
+  @apply text-2xl xl:text-4xl font-medium text-drakGray;
+}
+.products__title--primary {
+  @apply text-primary;
+}
+.products__list {
+  @apply mt-8 grid grid-cols-1 md:grid-cols-4 gap-4;
+}
+.products__item {
+  @apply relative px-5 py-8 rounded-lg hover:cursor-pointer;
+}
+.products__overlay {
+  @apply absolute inset-0 opacity-0 group-hover:opacity-[7%] transition-opacity duration-500 bg-[url('/images/header-bg.png')] bg-cover bg-center rounded-lg;
+}
+.products__content {
+  @apply relative z-10;
+}
+.products__image {
+  @apply mb-6;
+}
+.products__name {
+  @apply mb-1 text-xl font-medium text-drakGray;
+}
+.products__category {
+  @apply text-lg text-primary;
+}
+.products__actions {
+  @apply mt-8 text-center;
+}
+
+/* FOOTER */
 .footer {
-  @apply px-8 py-11 container mx-auto lg:px-28;
+  @apply px-6 py-11 container mx-auto lg:px-28;
 }
 .footer__container {
-  @apply bg-lightGreen px-8 py-12 lg:px-16 lg:py-20 flex flex-wrap gap-8 lg:gap-0 justify-between rounded-2xl;
+  @apply bg-lightGreen px-6 py-8 lg:px-10 lg:py-12 flex flex-wrap gap-8 lg:gap-0 justify-between rounded-2xl;
 }
 .footer__copyright {
   @apply text-center text-sm text-lightGray mt-12;
